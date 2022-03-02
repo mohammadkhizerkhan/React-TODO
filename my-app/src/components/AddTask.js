@@ -3,9 +3,9 @@ import React from 'react'
 function AddTask() {
     return (
         <div className='AddTask'>
-            <form action="">
+            <form action="" className='form'>
                 <input type="text" className='input'/>
-                <button className="addBtn">Add Task</button>
+                <button className="btn addBtn">Add Task</button>
             </form>
         </div>
     )
