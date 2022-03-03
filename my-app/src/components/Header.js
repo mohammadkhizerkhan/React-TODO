@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <div className='header'>
@@ -9,8 +9,8 @@ function Header() {
                     <li className="title-tasks">3 tasks incomplete</li>
                 </ul>
                 <ul className="nav-tasks">
-                    <li>Incomplete Tasks</li>
-                    <li>Completed Tasks</li>
+                <Link to="/Incomplete" className='link'>Incomplete Tasks</Link>
+                <Link to="/Complete" className='link'>Completed Tasks</Link>
                 </ul>
             </nav>
         </div>

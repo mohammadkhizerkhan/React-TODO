@@ -38,10 +38,12 @@
   width: 35%;
 }
 
-.nav-tasks li{
+.link{
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
-.nav-tasks li:hover{
+.link:hover{
   color: var(--primary-color);
 }
 
