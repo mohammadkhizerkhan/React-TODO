@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {useTodos} from "./TodoContext"
+
+
 function AddTask() {
     const {input,changeHandler,handleSubmit} =useTodos();
+
     return (
         <div className='AddTask'>
             <form action="" className='form'>

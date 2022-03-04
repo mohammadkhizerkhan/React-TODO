@@ -1,7 +1,6 @@
 // Import the functions you need from the SDKs you need
-import firebase from "firebase/compat/app"
 import { initializeApp } from "firebase/app";
-import "firebase/compat/firestore"
+import {collection,getFirestore} from "firebase/firestore"
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -18,18 +17,16 @@ const firebaseConfig = {
 const app=initializeApp(firebaseConfig);
 
 // init service
-const db=firebase.firestore(app);
+const db=getFirestore(app);
 
 // collection ref 
-// const colRef=firebase.collection(db,"todos");
+const colRef=collection(db,"todos");
 
 // get collection data
-// getDocs(colRef)
-// .then((snapshot)=>{
-//     console.log(snapshot.docs)
-// })
 
-export {db};
+
+
+export {db,colRef};
 
 
 

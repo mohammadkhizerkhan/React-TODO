@@ -98,7 +98,7 @@ border-radius: 4px;
   text-align: center;
 }
 
-.completed,.delete{
+.completed,.delete,.edit{
   font-size: 1.5rem;
   margin-right: 10px;
   color: #959595;
@@ -107,8 +107,16 @@ border-radius: 4px;
 .delete{
   margin-left: auto;
 }
+
+.edit{
+  margin-left: auto;
+}
+
 .completed:hover{
  color: rgb(0, 248, 12);
+}
+.edit:hover{
+ color: orange;
 }
 .delete:hover{
   color: tomato;
