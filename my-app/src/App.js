@@ -8,7 +8,11 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import {db} from './firebase/config'
+
+
 function App() {
+  console.log(db)
   return (
     <div className="App">
       <BrowserRouter>

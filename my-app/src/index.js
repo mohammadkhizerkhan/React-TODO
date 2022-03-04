@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { TodoProvider } from './components/TodoContext';
+// import {firebase} from './firebase/config'
 
 ReactDOM.render(
   <TodoProvider>
